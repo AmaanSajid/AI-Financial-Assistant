@@ -6,6 +6,7 @@ import os
 from dotenv import load_dotenv
 import yfinance as yf
 import datetime
+import altair as alt
 
 # Load environment variables
 load_dotenv()
