@@ -19,7 +19,7 @@ def get_stock_analysis(symbol: str) -> dict:
 def web_researcher(symbol: str) -> list:
     """Return raw search results"""
     try:
-        search = TavilySearchResults(max_results=3)
+        search = TavilySearchResults(max_results=4)
         return search.invoke(f"{symbol} stock news")
     except Exception as e:
         print(f"Search Error: {str(e)}")
